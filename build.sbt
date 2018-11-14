@@ -5,12 +5,13 @@ version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.12.3"
+scalaVersion := "2.12.7"
 
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "3.1.2" % Test
 libraryDependencies += ehcache
 libraryDependencies += "org.twitter4j" % "twitter4j-core" % "4.0.6"
+libraryDependencies += "javax.xml.bind" % "jaxb-api" % "2.3.1"
 libraryDependencies += jdbc
 libraryDependencies += evolutions
 libraryDependencies += "org.scalikejdbc" %% "scalikejdbc"  % "3.0.2"
